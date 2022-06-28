@@ -10,7 +10,7 @@ pool:
   project
 
 steps:
-- script: echo {{ password }}
+- script: echo $(password)
   displayName: 'Run a one-line script'
 
 - script: |
