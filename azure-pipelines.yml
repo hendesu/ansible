@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  project
 
 steps:
 - script: echo {{ password }}
