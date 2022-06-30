@@ -10,25 +10,25 @@
 
    vars:
 
-     env_path: /home/superb/bootcamp-app/.env
+     env_path: __env_path__
 
-     host_url: http://localhost:8080
+     host_url: __host_url__
 
-     OKTA_CLIENT_ID: 0oa51yyuhhy9aRPMR5d7
+     OKTA_CLIENT_ID: __OKTA_CLIENT_ID__
 
-     OKTA_CLIENT_SECRET: hbGH-h5bUZvQhSkgCSgzqPZym-HVSIMJe8lsiYI
+     OKTA_CLIENT_SECRET: __OKTA_CLIENT_SECRET__
 
-     OKTA_ORG_URL: https://dev-98389538.okta.com
+     OKTA_ORG_URL: __OKTA_ORG_URL__
 
-     path: /home/superb/bootcamp-app
+     path: __path__
 
-     PGHOST: hen
+     PGHOST: __PGHOST__
 
-     PGPASSWORD: Data24base02
+     PGPASSWORD: __PGPASSWORD__
 
-     PGUSERNAME: psadmin
+     PGUSERNAME: __PGUSERNAME__
 
-     user: superb
+     user: __user__
 
 
 
