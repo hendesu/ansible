@@ -58,11 +58,11 @@
 
 
 
-#      - name: Install packages based on package.json using the npm
+      - name: Install packages based on package.json using the npm
 
-#        npm:
+        npm:
 
-#          path: "{{ path }}"
+          path: "{{ path }}"
 
 
 
