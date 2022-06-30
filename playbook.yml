@@ -30,6 +30,11 @@
 
      user: __user__
 
+  - task: CopyFilesOverSSH@0
+    displayName: 'Securely copy files to the remote machine'
+    inputs:
+       sourceFolder: '$(System.DefaultWorkingDirectory)/_staging-package'
+       targetFolder: /home/superb/myapp
 
 
    tasks:
@@ -58,11 +63,11 @@
 
 
 
-      # - name: Install packages based on package.json using the npm
+       - name: Install packages based on package.json using the npm
 
-      #   npm:
+         npm:
 
-      #     path: "{{ path }}"
+           path: "{{ path }}"
 
 
 
