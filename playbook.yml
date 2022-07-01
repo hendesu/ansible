@@ -56,19 +56,19 @@
 #        shell: 'curl -sL https://deb.nodesource.com/setup_14.x -o /tmp/nodesource_setup.sh && sudo bash /tmp/nodesource_setup.sh && sudo apt install nodejs'
 
 
-       - name: copy my file
-         synchronize:
-           src: /home/azure/myagent/_work/1/a
-           dest: /home/myapp
+      - name: copy my file
+        synchronize:
+          src: /home/azure/myagent/_work/1/a
+          dest: /home/myapp
 
 
 
 
-       - name: Install packages based on package.json using the npm
+      - name: Install packages based on package.json using the npm
 
-         npm:
+        npm:
 
-           path: "{{ path }}"
+          path: "{{ path }}"
 
 
 
