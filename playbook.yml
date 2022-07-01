@@ -52,8 +52,8 @@
 
       - name: copy my file
         synchronize:
-          src: /home/azure/myagent/_work/1/a
-          dest: /home/myapp
+          src: /home/azure/myagent/_work/r1/a/artifact-package/
+          dest: /home/myapp/
 
 
       - name: Install the version '14.19.0' of package "node.js"
