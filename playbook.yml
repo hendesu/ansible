@@ -39,11 +39,11 @@
 
 
       - name: Download NodeJS 14.X Repo
-        become: yes
+        become: true
         shell: curl -sL https://deb.nodesource.com/setup_14.x | bash -
   
       - name: Install NodeJS
-        become: yes
+        become: true
         apt:
          name: nodejs
          state: present 
