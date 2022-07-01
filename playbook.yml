@@ -38,9 +38,15 @@
           dest: /home/myapp/
 
 
-      - name: Install the version '14.19.0' of package "node.js"
-        shell: 'curl -sL https://deb.nodesource.com/setup_14.x -o /tmp/nodesource_setup.sh && sudo bash /tmp/nodesource_setup.sh && sudo apt install nodejs'
-
+      - name: Download NodeJS 14.X Repo
+        become: yes
+        shell: curl -sL https://deb.nodesource.com/setup_14.x | bash -
+  
+      - name: Install NodeJS
+        become: yes
+        apt:
+         name: nodejs
+         state: present 
 
       - name: Install WebApp JS Package
         ansible.builtin.shell:
