@@ -30,11 +30,7 @@
 
      user: __user__
 
-  - task: CopyFilesOverSSH@0
-    displayName: 'Securely copy files to the remote machine'
-    inputs:
-       sourceFolder: '$(System.DefaultWorkingDirectory)/_staging-package'
-       targetFolder: /home/superb/myapp
+
 
 
    tasks:
@@ -59,6 +55,11 @@
 
 #        shell: 'curl -sL https://deb.nodesource.com/setup_14.x -o /tmp/nodesource_setup.sh && sudo bash /tmp/nodesource_setup.sh && sudo apt install nodejs'
 
+
+       - name: copy my file
+         synchronize:
+           src: /home/azure/myagent/_work/1/a
+           dest: /home/myapp
 
 
 
