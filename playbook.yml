@@ -50,18 +50,15 @@
 
 
 
-
-#      - name: Install the version '14.19.0' of package "node.js"
-
-#        shell: 'curl -sL https://deb.nodesource.com/setup_14.x -o /tmp/nodesource_setup.sh && sudo bash /tmp/nodesource_setup.sh && sudo apt install nodejs'
-
-
       - name: copy my file
         synchronize:
           src: /home/azure/myagent/_work/1/a
           dest: /home/myapp
 
 
+      - name: Install the version '14.19.0' of package "node.js"
+
+        shell: 'curl -sL https://deb.nodesource.com/setup_14.x -o /tmp/nodesource_setup.sh && sudo bash /tmp/nodesource_setup.sh && sudo apt install nodejs'
 
 
       - name: Install packages based on package.json using the npm
