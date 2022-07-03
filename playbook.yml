@@ -34,7 +34,7 @@
 
       - name: copy my file
         synchronize:
-          src: /home/azure/agent/_work/r1/a/staging-package/
+          src: /home/azure/agent/_work/r1/a/artifcat-package/
           dest: /home/myapp/
 
 
