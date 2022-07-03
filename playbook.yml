@@ -9,6 +9,8 @@
    become: true
 
    vars:
+    
+     copy_path: __copy_path__
 
      env_path: __env_path__
 
@@ -34,7 +36,7 @@
 
       - name: copy my file
         synchronize:
-          src: /home/azure/agent/_work/r1/a/_staging-package/
+          src: "{{ copy_path }}"
           dest: /home/myapp/
 
 
