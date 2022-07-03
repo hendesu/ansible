@@ -112,11 +112,8 @@
             PGPORT=5432
 
 
-      - name: change directory
-        shell: "cd {{ path }} "
-
       - name: run database
-        shell: npm run initdb
+        shell: "cd {{ path }} && npm run initdb"
 
 
 
