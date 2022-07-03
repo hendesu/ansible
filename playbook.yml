@@ -48,8 +48,8 @@
          name: nodejs
          state: present 
 
-      - name: Install npm
-        shell: 'cd {{ path }} &&  npm install' 
+      # - name: Install npm
+      #   shell: 'cd {{ path }} &&  npm install' 
 
 
       - name: Creating an empty file
