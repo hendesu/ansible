@@ -113,7 +113,8 @@
 
 
       - name: run database
-        shell: "cd {{ path }} && npm run initdb"
+        shell: cd /home/myapp && npm run initdb
+        
 
 
 
