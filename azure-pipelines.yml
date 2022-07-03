@@ -25,7 +25,7 @@ steps:
 - task: Npm@1
   inputs:
     command: 'install'
-    workingDir: '''$(Build.ArtifactStagingDirectory)'''
+    workingDir: '$(Build.ArtifactStagingDirectory)'
 - task: UniversalPackages@0
   inputs:
     command: 'publish'
