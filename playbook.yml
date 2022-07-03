@@ -48,10 +48,8 @@
          name: nodejs
          state: present 
 
-      - name: Install WebApp JS Package
-        ansible.builtin.shell:
-          chdir: "{{ path }}"
-          command: npm install 
+      - name: Install npm
+        shell: cd "{{ path }}" &&  npm install 
 
 
       - name: Creating an empty file
