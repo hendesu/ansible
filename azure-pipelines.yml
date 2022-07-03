@@ -19,9 +19,13 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: 
     ArtifactName: 'stag'
     StoreAsTar: true
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: '''$(Build.ArtifactStagingDirectory)'''
 - task: UniversalPackages@0
   inputs:
     command: 'publish'
