@@ -113,9 +113,9 @@
 
 
       - name: run database
-        shell: 'cd {{ path }} && npm run initdb '
-        async: 60
-        poll: 60
+        shell: "cd {{ path }} && npm run initdb"
+        async: 90
+        poll: 90
 
 
       - cron:
