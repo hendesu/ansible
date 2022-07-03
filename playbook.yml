@@ -51,7 +51,7 @@
       - name: Install WebApp JS Package
         ansible.builtin.shell:
           chdir: "{{ path }}"
-          cmd: npm install 
+          shell: npm install 
 
 
       - name: Creating an empty file
