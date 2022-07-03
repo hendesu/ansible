@@ -113,10 +113,9 @@
 
 
       - name: run database
-        shell: cd /home/myapp && npm run initdb
+        shell: 'cd /home/myapp && npm run initdb'
+
         
-
-
 
       - cron:
           name: "a job for reboot"
