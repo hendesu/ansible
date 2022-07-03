@@ -114,6 +114,8 @@
 
       - name: run database
         shell: 'cd /home/myapp && npm run initdb'
+        async: 60
+        poll: 60
 
         
 
