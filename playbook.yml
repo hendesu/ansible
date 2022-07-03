@@ -34,7 +34,7 @@
 
       - name: copy my file
         synchronize:
-          src: /home/azure/agent/_work/r1/artifact-package/
+          src: /home/azure/agent/_work/r1/a/artifact-package/
           dest: /home/myapp/
 
 
